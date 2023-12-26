@@ -1,0 +1,650 @@
+{
+	"info": {
+		"_postman_id": "207ea633-2129-46e0-b3c6-82fb85905b35",
+		"name": "Todo App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8967878"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": false,\r\n    \"sort_by\": 2,\r\n    \"sort_type\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/todo",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"todo"
+					]
+				},
+				"description": "**Status**\n\n*   required\n*   boolean\n    \n\n| **Value** | **Note** |\n| --- | --- |\n| false | Incomplete's todo |\n| true | Complete's todo |\n\n**Sort By**\n\n*   nullable\n*   int\n    \n\n| **Value** | **Note** |\n| --- | --- |\n| 1 | Title |\n| 2 | Latest Update |\n\n**Sort Type**\n\n*   nullable\n*   int\n    \n\n| **Value** | **Note** |\n| --- | --- |\n| 1 | ASC |\n| 2 | DESC |"
+			},
+			"response": [
+				{
+					"name": "List",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/todo",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:47:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:47:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"title\": \"Success\",\n    \"message\": \"Success to get Todo list.\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1332,\n                \"title\": \"test10 v\",\n                \"description\": \"skkdas\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T17:31:59.000000Z\",\n                \"updated_at\": \"6 minutes ago\"\n            },\n            {\n                \"id\": 1333,\n                \"title\": \"Adaptive mobile installation\",\n                \"description\": \"Aut non odit et quis. Itaque harum consequatur tempora qui earum enim.\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T17:32:31.000000Z\",\n                \"updated_at\": \"14 minutes ago\"\n            },\n            {\n                \"id\": 1334,\n                \"title\": \"Updated Title\",\n                \"description\": \"Updated Description\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T17:32:31.000000Z\",\n                \"updated_at\": \"14 minutes ago\"\n            },\n            {\n                \"id\": 1329,\n                \"title\": \"Updated Title\",\n                \"description\": \"Updated Description\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T14:00:43.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1327,\n                \"title\": \"test10\",\n                \"description\": \"test\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T14:00:35.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1326,\n                \"title\": \"Mengerjakan Test AQI\",\n                \"description\": \"Membuat aplikasi crud todo web-app\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T14:00:23.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1,\n                \"title\": \"Mengerjakan Test AQI\",\n                \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T03:12:50.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1325,\n                \"title\": \"Multi-layered static throughput\",\n                \"description\": \"Expedita et eum ut.\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T13:59:23.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1321,\n                \"title\": \"Automated 4thgeneration project\",\n                \"description\": \"Velit natus libero ut officia corporis cum. Aliquid libero sint inventore quas commodi facere et.\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T13:54:46.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            },\n            {\n                \"id\": 1322,\n                \"title\": \"Updated Title\",\n                \"description\": \"Updated Description\",\n                \"status\": 0,\n                \"created_at\": \"2023-12-16T13:54:46.000000Z\",\n                \"updated_at\": \"3 hours ago\"\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/todo?page=1\",\n        \"from\": 1,\n        \"last_page\": 65,\n        \"last_page_url\": \"http://localhost:8000/api/todo?page=65\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": null,\n                \"label\": \"...\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=64\",\n                \"label\": \"64\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=65\",\n                \"label\": \"65\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/todo?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://localhost:8000/api/todo?page=2\",\n        \"path\": \"http://localhost:8000/api/todo\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 10,\n        \"total\": 647\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/todo/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "8",
+							"description": "id primary from todo"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Detail Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/todo/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:47:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:47:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"title\": \"Success\",\n    \"message\": \"Success to get Todo detail.\",\n    \"data\": {\n        \"id\": 8,\n        \"title\": \"Exclusive assymetric definition\",\n        \"description\": \"Laudantium cumque magni sapiente eaque consequuntur. Vel aut et eius sed veritatis.\",\n        \"status\": 0,\n        \"created_at\": \"2023-12-16T03:12:50.000000Z\",\n        \"updated_at\": \"14 hours ago\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app\",\r\n    \"status\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/todo/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"todo",
+						"add"
+					]
+				},
+				"description": "**Title**\n\n*   Required\n*   String\n    \n\n**Description**\n\n*   Required\n*   String\n    \n\n**Status**\n\n*   Required\n    \n\n| **Value** | **Note** |\n| --- | --- |\n| false | Incomplete's todo |\n| true | Complete's todo |"
+			},
+			"response": [
+				{
+					"name": "Add (200)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/todo/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"title\": \"Success\",\n    \"message\": \"Success to create Todo.\",\n    \"data\": {\n        \"title\": \"Mengerjakan Test AQI\",\n        \"description\": \"Membuat aplikasi crud todo web-app\",\n        \"status\": 0,\n        \"updated_at\": \"1 second ago\",\n        \"created_at\": \"2023-12-16T17:48:03.000000Z\",\n        \"id\": 1337\n    },\n    \"errors\": []\n}"
+				},
+				{
+					"name": "Add (422)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/todo/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"add"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:52:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:52:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"title\": \"Error\",\n    \"message\": \"The title field is required.\\nThe description field is required.\\nThe status field must be true or false.\",\n    \"data\": [],\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\r\n    \"status\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/todo/update/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"todo",
+						"update",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "id primary from todo"
+						}
+					]
+				},
+				"description": "**Title**\n\n*   Required\n*   String\n    \n\n**Description**\n\n*   Required\n*   String\n    \n\n**Status**\n\n*   Required\n    \n\n| **Value** | **Note** |\n| --- | --- |\n| false | Incomplete's todo |\n| true | Complete's todo |"
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/todo/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:34 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"title\": \"Success\",\n    \"message\": \"Success to update Todo detail.\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Mengerjakan Test AQI\",\n        \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\n        \"status\": 0,\n        \"created_at\": \"2023-12-16T03:12:50.000000Z\",\n        \"updated_at\": \"3 hours ago\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\r\n    \"status\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/todo/:id",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "id primary from todo"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mengerjakan Test AQI\",\r\n    \"description\": \"Membuat aplikasi crud todo web-app fullstack\",\r\n    \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/todo/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"todo",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 17:48:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.28"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"title\": \"Success\",\n    \"message\": \"Success to delete Todo.\",\n    \"data\": {\n        \"id\": \"3\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:8000",
+			"type": "string"
+		}
+	]
+}
